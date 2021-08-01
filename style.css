@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin:2rem;
+    
+    
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(4,2fr) ;
+    grid-template-rows: repeat(8,2fr) ;
+    grid-gap: 0.4rem;
+    height: fit-content;
+    width:fit-content;
+    background-color: black;
+    padding:1rem; 
+}
+
+
+
+.conten1{
+    grid-area: 1/1/span 3 / span 4;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    color: white;
+
+}
+.conten18{
+    grid-area: 8/1/span 1/span 2;
+    
+}
+
+.top_btn{
+   background-color:rgb(236, 234, 234);
+   color: black;
+   font-size: 25px;
+ 
+    width: 70px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.top_btn:hover {background-color: rgb(206, 204, 204)}
+
+.top_btn:active {
+  background-color: rgb(206, 204, 204);
+  transform: translateY(4px);
+}
+
+.btn{
+    background-color: rgb(68, 67, 67);
+    color: white;
+    font-size: 25px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+
+}
+
+.btn:hover {background-color:rgb(105, 104, 104) }
+
+.btn:active {
+  background-color: rgb(87, 86, 86);
+  transform: translateY(4px);
+}
+
+
+
+.sol_btn{
+    background-color:orange;
+    color: white;
+    border-radius:50%;
+    height:100%;
+    width:100%;  
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.sol_btn:hover {background-color:rgb(252, 180, 46) }
+
+.sol_btn:active {
+  background-color:rgb(252, 180, 46) ;
+  transform: translateY(4px);
+}
+
+
+.calc_text{
+    height:50%;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color:black;
+    border: 0;
+    margin-bottom: 1rem;
+    color: white;
+   
+}
+
+#calc_text_pre{
+    opacity: 0.7;
+
+}
